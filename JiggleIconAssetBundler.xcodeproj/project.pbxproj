@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E83741B72C173D8A0029FAAB /* MeasureTool+SixBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83741B62C173D8A0029FAAB /* MeasureTool+SixBox.swift */; };
+		E83741B92C173DC40029FAAB /* Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83741B82C173DC40029FAAB /* Scale.swift */; };
+		E83741BB2C173DD40029FAAB /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83741BA2C173DD40029FAAB /* Classification.swift */; };
+		E83741BD2C173DE90029FAAB /* SixBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83741BC2C173DE90029FAAB /* SixBox.swift */; };
+		E83921D32C1748BD0048F3E7 /* MeasureTool+ExportAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E83921D22C1748BD0048F3E7 /* MeasureTool+ExportAsset.swift */; };
+		E8D51C272C14DA8B0080A60D /* JiggleIconAssetBundlerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D51C262C14DA8B0080A60D /* JiggleIconAssetBundlerApp.swift */; };
+		E8D51C292C14DA8B0080A60D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D51C282C14DA8B0080A60D /* ContentView.swift */; };
+		E8D51C2B2C14DA8B0080A60D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D51C2A2C14DA8B0080A60D /* Assets.xcassets */; };
+		E8D51C2E2C14DA8B0080A60D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8D51C2D2C14DA8B0080A60D /* Preview Assets.xcassets */; };
+		E8D51C372C14DAE30080A60D /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D51C352C14DAE30080A60D /* FileUtils.swift */; };
+		E8D51C382C14DAE30080A60D /* Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D51C362C14DAE30080A60D /* Bitmap.swift */; };
+		E8D51C3A2C14F64C0080A60D /* MeasureTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D51C392C14F64C0080A60D /* MeasureTool.swift */; };
+		E8D51C442C1513520080A60D /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D51C432C1513520080A60D /* Orientation.swift */; };
+		E8D51C462C1513BC0080A60D /* IconPackSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D51C452C1513BC0080A60D /* IconPackSlice.swift */; };
+		E8D51C482C1513E40080A60D /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D51C472C1513E40080A60D /* Device.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E83741B62C173D8A0029FAAB /* MeasureTool+SixBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasureTool+SixBox.swift"; sourceTree = "<group>"; };
+		E83741B82C173DC40029FAAB /* Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scale.swift; sourceTree = "<group>"; };
+		E83741BA2C173DD40029FAAB /* Classification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		E83741BC2C173DE90029FAAB /* SixBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixBox.swift; sourceTree = "<group>"; };
+		E83921D22C1748BD0048F3E7 /* MeasureTool+ExportAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeasureTool+ExportAsset.swift"; sourceTree = "<group>"; };
+		E8D51C232C14DA8B0080A60D /* JiggleIconAssetBundler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiggleIconAssetBundler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D51C262C14DA8B0080A60D /* JiggleIconAssetBundlerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiggleIconAssetBundlerApp.swift; sourceTree = "<group>"; };
+		E8D51C282C14DA8B0080A60D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E8D51C2A2C14DA8B0080A60D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8D51C2D2C14DA8B0080A60D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E8D51C2F2C14DA8B0080A60D /* JiggleIconAssetBundler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JiggleIconAssetBundler.entitlements; sourceTree = "<group>"; };
+		E8D51C352C14DAE30080A60D /* FileUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
+		E8D51C362C14DAE30080A60D /* Bitmap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bitmap.swift; sourceTree = "<group>"; };
+		E8D51C392C14F64C0080A60D /* MeasureTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureTool.swift; sourceTree = "<group>"; };
+		E8D51C432C1513520080A60D /* Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
+		E8D51C452C1513BC0080A60D /* IconPackSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPackSlice.swift; sourceTree = "<group>"; };
+		E8D51C472C1513E40080A60D /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8D51C202C14DA8B0080A60D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8D51C1A2C14DA8B0080A60D = {
+			isa = PBXGroup;
+			children = (
+				E8D51C252C14DA8B0080A60D /* JiggleIconAssetBundler */,
+				E8D51C242C14DA8B0080A60D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8D51C242C14DA8B0080A60D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8D51C232C14DA8B0080A60D /* JiggleIconAssetBundler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8D51C252C14DA8B0080A60D /* JiggleIconAssetBundler */ = {
+			isa = PBXGroup;
+			children = (
+				E8D51C362C14DAE30080A60D /* Bitmap.swift */,
+				E8D51C352C14DAE30080A60D /* FileUtils.swift */,
+				E8D51C262C14DA8B0080A60D /* JiggleIconAssetBundlerApp.swift */,
+				E8D51C282C14DA8B0080A60D /* ContentView.swift */,
+				E8D51C2A2C14DA8B0080A60D /* Assets.xcassets */,
+				E8D51C2F2C14DA8B0080A60D /* JiggleIconAssetBundler.entitlements */,
+				E8D51C2C2C14DA8B0080A60D /* Preview Content */,
+				E8D51C392C14F64C0080A60D /* MeasureTool.swift */,
+				E83741B62C173D8A0029FAAB /* MeasureTool+SixBox.swift */,
+				E83921D22C1748BD0048F3E7 /* MeasureTool+ExportAsset.swift */,
+				E8D51C432C1513520080A60D /* Orientation.swift */,
+				E8D51C452C1513BC0080A60D /* IconPackSlice.swift */,
+				E8D51C472C1513E40080A60D /* Device.swift */,
+				E83741B82C173DC40029FAAB /* Scale.swift */,
+				E83741BA2C173DD40029FAAB /* Classification.swift */,
+				E83741BC2C173DE90029FAAB /* SixBox.swift */,
+			);
+			path = JiggleIconAssetBundler;
+			sourceTree = "<group>";
+		};
+		E8D51C2C2C14DA8B0080A60D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E8D51C2D2C14DA8B0080A60D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8D51C222C14DA8B0080A60D /* JiggleIconAssetBundler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8D51C322C14DA8B0080A60D /* Build configuration list for PBXNativeTarget "JiggleIconAssetBundler" */;
+			buildPhases = (
+				E8D51C1F2C14DA8B0080A60D /* Sources */,
+				E8D51C202C14DA8B0080A60D /* Frameworks */,
+				E8D51C212C14DA8B0080A60D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JiggleIconAssetBundler;
+			productName = JiggleIconAssetBundler;
+			productReference = E8D51C232C14DA8B0080A60D /* JiggleIconAssetBundler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8D51C1B2C14DA8B0080A60D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E8D51C222C14DA8B0080A60D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = E8D51C1E2C14DA8B0080A60D /* Build configuration list for PBXProject "JiggleIconAssetBundler" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8D51C1A2C14DA8B0080A60D;
+			productRefGroup = E8D51C242C14DA8B0080A60D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8D51C222C14DA8B0080A60D /* JiggleIconAssetBundler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8D51C212C14DA8B0080A60D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8D51C2E2C14DA8B0080A60D /* Preview Assets.xcassets in Resources */,
+				E8D51C2B2C14DA8B0080A60D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8D51C1F2C14DA8B0080A60D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E83921D32C1748BD0048F3E7 /* MeasureTool+ExportAsset.swift in Sources */,
+				E83741BD2C173DE90029FAAB /* SixBox.swift in Sources */,
+				E83741B72C173D8A0029FAAB /* MeasureTool+SixBox.swift in Sources */,
+				E8D51C462C1513BC0080A60D /* IconPackSlice.swift in Sources */,
+				E8D51C382C14DAE30080A60D /* Bitmap.swift in Sources */,
+				E8D51C372C14DAE30080A60D /* FileUtils.swift in Sources */,
+				E8D51C3A2C14F64C0080A60D /* MeasureTool.swift in Sources */,
+				E8D51C292C14DA8B0080A60D /* ContentView.swift in Sources */,
+				E8D51C442C1513520080A60D /* Orientation.swift in Sources */,
+				E8D51C272C14DA8B0080A60D /* JiggleIconAssetBundlerApp.swift in Sources */,
+				E83741B92C173DC40029FAAB /* Scale.swift in Sources */,
+				E83741BB2C173DD40029FAAB /* Classification.swift in Sources */,
+				E8D51C482C1513E40080A60D /* Device.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E8D51C302C14DA8B0080A60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8D51C312C14DA8B0080A60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		E8D51C332C14DA8B0080A60D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JiggleIconAssetBundler/JiggleIconAssetBundler.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JiggleIconAssetBundler/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.raptis.icon.assets.JiggleIconAssetBundler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E8D51C342C14DA8B0080A60D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = JiggleIconAssetBundler/JiggleIconAssetBundler.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"JiggleIconAssetBundler/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.raptis.icon.assets.JiggleIconAssetBundler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8D51C1E2C14DA8B0080A60D /* Build configuration list for PBXProject "JiggleIconAssetBundler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8D51C302C14DA8B0080A60D /* Debug */,
+				E8D51C312C14DA8B0080A60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8D51C322C14DA8B0080A60D /* Build configuration list for PBXNativeTarget "JiggleIconAssetBundler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8D51C332C14DA8B0080A60D /* Debug */,
+				E8D51C342C14DA8B0080A60D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8D51C1B2C14DA8B0080A60D /* Project object */;
+}
