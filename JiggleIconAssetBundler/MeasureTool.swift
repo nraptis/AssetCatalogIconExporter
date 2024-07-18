@@ -64,7 +64,7 @@ class MeasureTool {
     static func checkBoxBuildAsset(name: String) {
         let prefix = "check_box"
         let classifications = checkBoxClassifications()
-        let scales = checkBoxScales()
+        let scales = getScales()
         let asset = getAsset(prefix: prefix,
                              name: name,
                              classifications: classifications,
@@ -72,6 +72,20 @@ class MeasureTool {
         export(asset: asset)
         checkBoxLogAsset(prefix: prefix, name: name, asset: asset)
     }
+    
+    static func textButtonBuildAsset(name: String) {
+        let prefix = "text_button"
+        let classifications = checkBoxClassifications()
+        let scales = getScales()
+        let asset = getAsset(prefix: prefix,
+                             name: name,
+                             classifications: classifications,
+                             scales: scales)
+        export(asset: asset)
+        textButtonLogAsset(prefix: prefix, name: name, asset: asset)
+    }
+    
+    
     
     static func getAsset(prefix: String, name: String, classifications: [Classification], scales: [Scale]) -> Asset {
         var iconSets = [IconSet]()
@@ -142,7 +156,7 @@ class MeasureTool {
         return classifications
     }
     
-    static func checkBoxScales() -> [Scale] {
+    static func getScales() -> [Scale] {
         let scales: [Scale] = [
             .X1_0,
             .X2_0,
@@ -278,6 +292,121 @@ static var \(variableName): CheckBoxIconPack = {
                             slicePhonePortrait0Lines: slicePhonePortrait0Lines,
                             slicePhonePortrait1Line: slicePhonePortrait1Line,
                             slicePhonePortrait2Lines: slicePhonePortrait2Lines)
+}()
+"""
+        
+        print("")
+        print(output)
+        print("")
+        
+        
+    }
+    
+    static func textButtonLogAsset(prefix: String,
+                                 name: String,
+                                 asset: Asset) {
+        
+        guard let iconSetPad0Lines = asset.getIconSet(classification: .pad0Lines) else {
+            fatalError("iconSetPad0Lines doesn't exist")
+        }
+        
+        guard let iconSetPad1Line = asset.getIconSet(classification: .pad1Line) else {
+            fatalError("iconSetPad1Line doesn't exist")
+        }
+        
+        guard let iconSetPad2Lines = asset.getIconSet(classification: .pad2Lines) else {
+            fatalError("iconSetPad2Lines doesn't exist")
+        }
+        
+        guard let iconSetPhonePortrait0Lines = asset.getIconSet(classification: .phonePortrait0Lines) else {
+            fatalError("iconSetPhonePortrait0Lines doesn't exist")
+        }
+        
+        guard let iconSetPhonePortrait1Line = asset.getIconSet(classification: .phonePortrait1Line) else {
+            fatalError("iconSetPhonePortrait1Line doesn't exist")
+        }
+        
+        guard let iconSetPhonePortrait2Lines = asset.getIconSet(classification: .phonePortrait2Lines) else {
+            fatalError("iconSetPhonePortrait2Lines doesn't exist")
+        }
+        
+        guard let iconSetPhoneLandscape0Lines = asset.getIconSet(classification: .phoneLandscape0Lines) else {
+            fatalError("iconSetPhoneLandscape0Lines doesn't exist")
+        }
+        
+        guard let iconSetPhoneLandscape1Line = asset.getIconSet(classification: .phoneLandscape1Line) else {
+            fatalError("iconSetPhoneLandscape1Line doesn't exist")
+        }
+        
+        guard let iconSetPhoneLandscape2Lines = asset.getIconSet(classification: .phoneLandscape2Lines) else {
+            fatalError("iconSetPhoneLandscape2Lines doesn't exist")
+        }
+        
+        let slicePad0Lines = getIconPackSlice(iconSet: iconSetPad0Lines)
+        let slicePad1Line = getIconPackSlice(iconSet: iconSetPad1Line)
+        let slicePad2Lines = getIconPackSlice(iconSet: iconSetPad2Lines)
+        
+        let slicePhoneLandscape0Lines = getIconPackSlice(iconSet: iconSetPhoneLandscape0Lines)
+        let slicePhoneLandscape1Line = getIconPackSlice(iconSet: iconSetPhoneLandscape1Line)
+        let slicePhoneLandscape2Lines = getIconPackSlice(iconSet: iconSetPhoneLandscape2Lines)
+        
+        let slicePhonePortrait0Lines = getIconPackSlice(iconSet: iconSetPhonePortrait0Lines)
+        let slicePhonePortrait1Line = getIconPackSlice(iconSet: iconSetPhonePortrait1Line)
+        let slicePhonePortrait2Lines = getIconPackSlice(iconSet: iconSetPhonePortrait2Lines)
+        
+        let variableName = snakeToCamel(string: name)
+        let output = """
+static var \(variableName): TextIconButtonIconPack = {
+    let slicePad0Lines = AnyTextIcon(fileName: \"\(iconSetPad0Lines.fileName)\",
+                                     device: \(slicePad0Lines.deviceName), orientation: \(slicePad0Lines.orientationName),
+                                     imageWidth: \(slicePad0Lines.imageWidth), imageHeight: \(slicePad0Lines.imageHeight),
+                                     iconX: \(slicePad0Lines.iconX), iconY: \(slicePad0Lines.iconY), iconWidth: \(slicePad0Lines.iconWidth), iconHeight: \(slicePad0Lines.iconHeight))
+    let slicePad1Line = AnyTextIcon(fileName: \"\(iconSetPad1Line.fileName)\",
+                                      device: \(slicePad1Line.deviceName), orientation: \(slicePad1Line.orientationName),
+                                      imageWidth: \(slicePad1Line.imageWidth), imageHeight: \(slicePad1Line.imageHeight),
+                                      iconX: \(slicePad1Line.iconX), iconY: \(slicePad1Line.iconY), iconWidth: \(slicePad1Line.iconWidth), iconHeight: \(slicePad1Line.iconHeight))
+    let slicePad2Lines = AnyTextIcon(fileName: \"\(iconSetPad2Lines.fileName)\",
+                                       device: \(slicePad2Lines.deviceName), orientation: \(slicePad2Lines.orientationName),
+                                       imageWidth: \(slicePad2Lines.imageWidth), imageHeight: \(slicePad2Lines.imageHeight),
+                                       iconX: \(slicePad2Lines.iconX), iconY: \(slicePad2Lines.iconY), iconWidth: \(slicePad2Lines.iconWidth), iconHeight: \(slicePad2Lines.iconHeight))
+    
+    let slicePhoneLandscape0Lines = AnyTextIcon(fileName: \"\(slicePhoneLandscape0Lines.fileName)\",
+                                                  device: \(slicePhoneLandscape0Lines.deviceName), orientation: \(slicePhoneLandscape0Lines.orientationName),
+                                                  imageWidth: \(slicePhoneLandscape0Lines.imageWidth), imageHeight: \(slicePhoneLandscape0Lines.imageHeight),
+                                                  iconX: \(slicePhoneLandscape0Lines.iconX), iconY: \(slicePhoneLandscape0Lines.iconY), iconWidth: \(slicePhoneLandscape0Lines.iconWidth), iconHeight: \(slicePhoneLandscape0Lines.iconHeight))
+    let slicePhoneLandscape1Line = AnyTextIcon(fileName: \"\(slicePhoneLandscape1Line.fileName)\",
+                                                 device: \(slicePhoneLandscape1Line.deviceName), orientation: \(slicePhoneLandscape1Line.orientationName),
+                                                 imageWidth: \(slicePhoneLandscape1Line.imageWidth), imageHeight: \(slicePhoneLandscape1Line.imageHeight),
+                                                 iconX: \(slicePhoneLandscape1Line.iconX), iconY: \(slicePhoneLandscape1Line.iconY), iconWidth: \(slicePhoneLandscape1Line.iconWidth), iconHeight: \(slicePhoneLandscape1Line.iconHeight))
+    let slicePhoneLandscape2Lines = AnyTextIcon(fileName: \"\(slicePhoneLandscape2Lines.fileName)\",
+                                                  device: \(slicePhoneLandscape2Lines.deviceName), orientation: \(slicePhoneLandscape2Lines.orientationName),
+                                                  imageWidth: \(slicePhoneLandscape2Lines.imageWidth), imageHeight: \(slicePhoneLandscape2Lines.imageHeight),
+                                                  iconX: \(slicePhoneLandscape2Lines.iconX), iconY: \(slicePhoneLandscape2Lines.iconY), iconWidth: \(slicePhoneLandscape2Lines.iconWidth), iconHeight: \(slicePhoneLandscape2Lines.iconHeight))
+    
+    let slicePhonePortrait0Lines = AnyTextIcon(fileName: \"\(slicePhonePortrait0Lines.fileName)\",
+                                                 device: \(slicePhonePortrait0Lines.deviceName), orientation: \(slicePhonePortrait0Lines.orientationName),
+                                                 imageWidth: \(slicePhonePortrait0Lines.imageWidth), imageHeight: \(slicePhonePortrait0Lines.imageHeight),
+                                                 iconX: \(slicePhonePortrait0Lines.iconX), iconY: \(slicePhonePortrait0Lines.iconY), iconWidth: \(slicePhonePortrait0Lines.iconWidth), iconHeight: \(slicePhonePortrait0Lines.iconHeight))
+    let slicePhonePortrait1Line = AnyTextIcon(fileName: \"\(slicePhonePortrait1Line.fileName)\",
+                                                device: \(slicePhonePortrait1Line.deviceName), orientation: \(slicePhonePortrait1Line.orientationName),
+                                                imageWidth: \(slicePhonePortrait1Line.imageWidth), imageHeight: \(slicePhonePortrait1Line.imageHeight),
+                                                iconX: \(slicePhonePortrait1Line.iconX), iconY: \(slicePhonePortrait1Line.iconY), iconWidth: \(slicePhonePortrait1Line.iconWidth), iconHeight: \(slicePhonePortrait1Line.iconHeight))
+    let slicePhonePortrait2Lines = AnyTextIcon(fileName: \"\(slicePhonePortrait2Lines.fileName)\",
+                                                 device: \(slicePhonePortrait2Lines.deviceName), orientation: \(slicePhonePortrait2Lines.orientationName),
+                                                 imageWidth: \(slicePhonePortrait2Lines.imageWidth), imageHeight: \(slicePhonePortrait2Lines.imageHeight),
+                                                 iconX: \(slicePhonePortrait2Lines.iconX), iconY: \(slicePhonePortrait2Lines.iconY), iconWidth: \(slicePhonePortrait2Lines.iconWidth), iconHeight: \(slicePhonePortrait2Lines.iconHeight))
+    
+    return TextIconButtonIconPack(slicePad0Lines: slicePad0Lines,
+                                slicePad1Line: slicePad1Line,
+                                slicePad2Lines: slicePad2Lines,
+                            
+                                slicePhoneLandscape0Lines: slicePhoneLandscape0Lines,
+                                slicePhoneLandscape1Line: slicePhoneLandscape1Line,
+                                slicePhoneLandscape2Lines: slicePhoneLandscape2Lines,
+                            
+                                slicePhonePortrait0Lines: slicePhonePortrait0Lines,
+                                slicePhonePortrait1Line: slicePhonePortrait1Line,
+                                slicePhonePortrait2Lines: slicePhonePortrait2Lines)
 }()
 """
         

@@ -20,8 +20,18 @@ struct ContentView: View {
             
             //MeasureTool.goTextIconButtonButton(filePrefix: "interface_text_button_box", variableName: "box")
 
+            
             //MeasureTool.checkBoxBuildAsset(name: "sample")
-            MeasureTool.checkBoxBuildAsset(name: "remove_points")
+            //MeasureTool.checkBoxBuildAsset(name: "remove_points")
+            
+            
+            //MeasureTool.checkBoxBuildAsset(name: "remove_points")
+            //MeasureTool.checkBoxBuildAsset(name: "add_points")
+            
+            
+            MeasureTool.textButtonBuildAsset(name: "remove_point")
+            
+            //MeasureTool.textButtonBuildAsset(name: "redo")
             
             
             //MeasureTool.goTextIconButtonButton(filePrefix: "interface_text_button_box", variableName: "dice")

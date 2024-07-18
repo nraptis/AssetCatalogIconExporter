@@ -19,7 +19,6 @@ class AnyTextIcon {
     var orientation: Orientation?
     let orientationName: String
     let deviceName: String
-    
     init(fileName: String,
          device: Device,
          orientation: Orientation?,
