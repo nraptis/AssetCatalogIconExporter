@@ -1,0 +1,23 @@
+{
+	"images": [
+		{
+			"filename": "segment_mode_jiggle_edit_affine_phone_ls_1l_1_0.png",
+			"idiom": "universal",
+			"scale": "1x"
+		},
+		{
+			"filename": "segment_mode_jiggle_edit_affine_phone_ls_1l_2_0.png",
+			"idiom": "universal",
+			"scale": "2x"
+		},
+		{
+			"filename": "segment_mode_jiggle_edit_affine_phone_ls_1l_3_0.png",
+			"idiom": "universal",
+			"scale": "3x"
+		}
+	],
+	"info": {
+		"author": "nraptis",
+		"version": 1
+	}
+}

@@ -61,6 +61,18 @@ struct IconSet {
 
 class MeasureTool {
     
+    static func segmentBoxBuildAsset(name: String) {
+        let prefix = "segment"
+        let classifications = checkBoxClassifications()
+        let scales = getScales()
+        let asset = getAsset(prefix: prefix,
+                             name: name,
+                             classifications: classifications,
+                             scales: scales)
+        export(asset: asset)
+        checkBoxLogAsset(prefix: prefix, name: name, asset: asset)
+    }
+    
     static func checkBoxBuildAsset(name: String) {
         let prefix = "check_box"
         let classifications = checkBoxClassifications()

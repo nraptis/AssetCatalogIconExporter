@@ -20,6 +20,8 @@ struct ContentView: View {
             
             //MeasureTool.goTextIconButtonButton(filePrefix: "interface_text_button_box", variableName: "box")
 
+            MeasureTool.segmentBoxBuildAsset(name: "mode_weights_edit_centers")
+            
             
             //MeasureTool.checkBoxBuildAsset(name: "sample")
             //MeasureTool.checkBoxBuildAsset(name: "remove_points")
@@ -29,7 +31,17 @@ struct ContentView: View {
             //MeasureTool.checkBoxBuildAsset(name: "add_points")
             
             
-            MeasureTool.textButtonBuildAsset(name: "remove_point")
+            //mode_document_edit_weights
+            //mode_document_edit_jiggles
+            //mode_document_edit_points
+            //mode_jiggle_edit_affine
+            //mode_weights_edit_affine
+            //mode_weights_edit_points
+            //mode_weights_edit_centers
+            
+            
+            //MeasureTool.textButtonBuildAsset(name: "remove_point")
+            
             
             //MeasureTool.textButtonBuildAsset(name: "redo")
             
